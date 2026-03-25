@@ -3,7 +3,7 @@
 # Maintainer: Felix Lionardo <flionardo@qnx.com>
 pkgname=godot
 pkgver=4.4.1
-pkgrel=${pkgrel:-0}
+pkgrel=0
 _commit="650bed9662eebf885249fe557801211448f3724d"
 pkgdesc="Multi-platform 2D and 3D game engine"
 url="https://godotengine.org"
@@ -170,7 +170,6 @@ templates() {
     amove usr/bin/*template*
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 fa9312eb979f35d1a62cb31057a68c0b7fa3269db7e0fa72abe8d4637838bd2d1abc649b0a10071cc364c88f292266590ce2b83869a7d97d8b5047da6e11f551  650bed9662eebf885249fe557801211448f3724d.tar.gz
 127a2ef78e0534b627f902d95e7433a1ca765053bcc06ea5999a0c9b0cf5ec276b652af88cce5468627cf2dc81dedb177c40b1c07259b6cd03bf5c323416a2d7  0001-godot-wayland-build-for-qnx.patch
